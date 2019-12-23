@@ -1,12 +1,5 @@
 /*---------------------------------------------
-SavePoint™
-A very simple front-end boilerplate.
-Author: Learn the Web
-Version: 0.1
-https://github.com/learningtheweb/SavePoint
-Section: $Grid
-Uses a modified https://simplegrid.io/
-Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
+            Grid
 ----------------------------------------------*/
 
 // utility
@@ -53,7 +46,7 @@ $breakpoint-large: 60em; // 960px
 
     @media only screen and (min-width: $breakpoint-large) {
         width: 75%;
-        max-width: 60rem;
+        max-width: 1200px;
     }
 }
 

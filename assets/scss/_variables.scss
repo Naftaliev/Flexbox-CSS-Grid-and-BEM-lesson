@@ -1,0 +1,26 @@
+
+//Fonts
+
+$ff-poppins: 'Poppins', sans-serif;
+$ff-playfair: 'Playfair Display', serif;
+
+@mixin Poppins-Light() {
+  font-family: $ff-poppins;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin Poppins-Bold() {
+  font-family: $ff-poppins;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin Playfair() {
+  font-family: $ff-playfair;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//Colors
+$heading-color: #333333;
