@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'helpers';
 
 /*------------------------------
 		Universal
@@ -12,4 +13,217 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $ff-playfair;
 	color: $heading-color;
+	line-height: 120%;
 }
+
+a {
+		color: $link-color;
+		text-decoration: none;
+
+		&:hover {
+			color: $brand-color;
+		}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*------------------------------
+		ENDS Universal
+-------------------------------*/
+
+
+
+/*------------------------------
+		Site-header
+-------------------------------*/
+
+.site-header {
+	padding: 70px 0;
+}
+
+/*------------------------------
+		ENDS Site-header
+-------------------------------*/
+
+
+
+/*------------------------------
+		Site-logo
+-------------------------------*/
+
+.site-logo {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*------------------------------
+		ENDS Site-logo
+-------------------------------*/
+
+
+
+/*------------------------------
+		Site-nav
+-------------------------------*/
+
+.site-nav {
+	@include uppercase();
+	font-size: 0.75em;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 .9em;
+	}
+
+	a {
+		display: block;
+	}
+
+}
+
+/*------------------------------
+		ENDS Site-nav
+-------------------------------*/
+
+
+
+/*------------------------------
+		Info-block
+-------------------------------*/
+
+.info-block {
+
+}
+
+.info-block_title {
+	margin-bottom: 20px;
+	text-align: center;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-size: 2rem;
+	}
+}
+
+.info-block_title--fancy {
+	&:after {
+		content: "";
+		display: inline-block;
+		width: 23px;
+		height: 2px;
+		background-color: $brand-color;
+		margin-top: 20px;
+		}
+	}
+
+.info-block_title--bigger {
+	h1,h2,h3,h4,h5,h6 {
+		font-size: 4rem;
+		color: #121212;
+	}
+}
+
+
+.info-block_body {
+	margin-bottom: 20px;
+
+	p {
+		color: #616161;
+		font-size: .9rem;
+	}
+}
+
+.info-block_subtitle {
+	@include uppercase();
+	color: $brand-color;
+	font-size: 0.7rem;
+	font-family: $ff-poppins;
+	display: block;
+
+	h1,h2,h3,h4,h5,h6,p {
+	}
+}
+
+.info-block_cta {
+	@include uppercase();
+	font-size: 0.7rem;
+
+	a {
+		border-bottom: 2px solid $brand-color;
+	}
+}
+
+/*------------------------------
+		ENDS Info-block
+-------------------------------*/
+
+
+
+/*------------------------------
+		Hero
+-------------------------------*/
+
+.hero {
+
+}
+
+.hero_text {
+
+}
+
+.hero_img {
+
+}
+
+/*------------------------------
+		ENDS Hero
+-------------------------------*/
+
+
+
+/*------------------------------
+		Media-query
+-------------------------------*/
+
+@media (min-width: 720px) {
+	.site-nav, .site-logo {
+		text-align: left;
+	}
+
+	.site-logo {
+		margin-bottom: 0;
+	}
+
+}
+
+@media (min-width: 800px) {
+	.hero {
+ position: relative;
+}
+
+	.hero_text {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 45%;
+	}
+
+	.hero_img {
+		text-align: right;
+
+		img {
+			width: 85%;
+		}
+	}
+}
+
+.info-block_title {
+	text-align: left;
+}
+
+/*------------------------------
+		ENDS Media-query
+-------------------------------*/

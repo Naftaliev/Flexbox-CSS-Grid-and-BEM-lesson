@@ -54,6 +54,10 @@ $breakpoint-large: 60em; // 960px
     width: 100%;
 }
 
+.row--centred {
+    align-items: center;
+}
+
 .row [class^="col"] {
     min-height: 0.125rem;
 }
