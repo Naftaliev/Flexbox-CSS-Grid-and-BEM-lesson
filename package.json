@@ -1,0 +1,24 @@
+{
+  "name": "flexbox-css-grid-and-bem-lesson",
+  "version": "1.0.0",
+  "description": "https://www.youtube.com/watch?v=06yKycdfAsM&amp;list=WL&amp;index=51&amp;t=54s",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naftaliev/Flexbox-CSS-Grid-and-BEM-lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naftaliev/Flexbox-CSS-Grid-and-BEM-lesson/issues"
+  },
+  "homepage": "https://github.com/Naftaliev/Flexbox-CSS-Grid-and-BEM-lesson#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
