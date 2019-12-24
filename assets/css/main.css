@@ -108,14 +108,74 @@ img {
 		ENDS Info-block
 -------------------------------*/
 /*------------------------------
+		Qoute
+-------------------------------*/
+.quote {
+  text-align: center;
+  margin: 0 auto 30px auto; }
+  .quote:after {
+    content: "";
+    display: block;
+    background-color: #5da8cf;
+    width: 2px;
+    height: 100px;
+    margin: 30px auto 20px auto; }
+
+.quote_body {
+  font-family: "Playfair Display", serif;
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 400; }
+
+.quote_name {
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-weight: bold;
+  font-style: normal;
+  font-size: .7rem;
+  color: #333333;
+  display: block;
+  margin-top: 20px; }
+
+/*------------------------------
+		ENDS Quote
+-------------------------------*/
+/*------------------------------
+		Showcase
+-------------------------------*/
+.showcase {
+  width: 50%;
+  margin-bottom: 50px; }
+
+.showcase--bigger {
+  width: 70%;
+  margin-top: 40px;
+  margin-left: -7%; }
+
+.showcase_body {
+  margin-top: 80px; }
+
+/*------------------------------
+		ENDS Showcase
+-------------------------------*/
+/*------------------------------
 		Hero
 -------------------------------*/
+.hero {
+  margin-bottom: 50px; }
+
 /*------------------------------
 		ENDS Hero
 -------------------------------*/
 /*------------------------------
 		Media-query
 -------------------------------*/
+@media (min-width: 500px) {
+  .showcase_body {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 20px; } }
+
 @media (min-width: 720px) {
   .site-nav, .site-logo {
     text-align: left; }
@@ -124,7 +184,8 @@ img {
 
 @media (min-width: 800px) {
   .hero {
-    position: relative; }
+    position: relative;
+    margin-bottom: 150px; }
   .hero_text {
     position: absolute;
     top: 50%;
@@ -133,10 +194,11 @@ img {
   .hero_img {
     text-align: right; }
     .hero_img img {
-      width: 85%; } }
-
-.info-block_title {
-  text-align: left; }
+      width: 85%; }
+  .info-block_title {
+    text-align: left; }
+  .quote {
+    width: 50%; } }
 
 /*------------------------------
 		ENDS Media-query
@@ -160,6 +222,9 @@ img {
 
 .hidden-sm {
   display: none; }
+
+.d-flex {
+  display: flex; }
 
 .container {
   width: 90%;

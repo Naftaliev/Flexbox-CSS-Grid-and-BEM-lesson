@@ -163,19 +163,78 @@ img {
 
 
 /*------------------------------
+		Qoute
+-------------------------------*/
+
+.quote {
+	text-align: center;
+	margin: 0 auto 30px auto;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: $brand-color;
+		width: 2px;
+		height: 100px;
+		margin: 30px auto 20px auto;
+	}
+
+}
+
+.quote_body {
+	font-family: $ff-playfair;
+	color: $heading-color;
+	font-size: 1.8rem;
+	font-weight: 400;
+
+}
+
+.quote_name {
+	@include uppercase();
+	font-style: normal;
+	font-size: .7rem;
+	color: $heading-color;
+	display: block;
+	margin-top: 20px;
+}
+
+/*------------------------------
+		ENDS Quote
+-------------------------------*/
+
+
+
+/*------------------------------
+		Showcase
+-------------------------------*/
+
+.showcase {
+	width:50%;
+	margin-bottom: 50px;
+}
+
+.showcase--bigger {
+	width: 70%;
+	margin-top: 40px;
+	margin-left: -7%;
+}
+
+.showcase_body {
+		margin-top: 80px;
+	}
+
+/*------------------------------
+		ENDS Showcase
+-------------------------------*/
+
+
+
+/*------------------------------
 		Hero
 -------------------------------*/
 
 .hero {
-
-}
-
-.hero_text {
-
-}
-
-.hero_img {
-
+	margin-bottom: 50px;
 }
 
 /*------------------------------
@@ -187,6 +246,15 @@ img {
 /*------------------------------
 		Media-query
 -------------------------------*/
+
+@media (min-width: 500px) {
+	.showcase_body {
+		width: 70%;
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+
+}
 
 @media (min-width: 720px) {
 	.site-nav, .site-logo {
@@ -202,6 +270,7 @@ img {
 @media (min-width: 800px) {
 	.hero {
  position: relative;
+ margin-bottom: 150px;
 }
 
 	.hero_text {
@@ -218,11 +287,18 @@ img {
 			width: 85%;
 		}
 	}
-}
 
 .info-block_title {
 	text-align: left;
 }
+
+.quote {
+	width: 50%;
+}
+
+
+}
+
 
 /*------------------------------
 		ENDS Media-query
